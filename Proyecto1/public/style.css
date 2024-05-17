@@ -1,0 +1,9 @@
+body{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(116,9,121,0.958420868347339) 60%, rgba(0,212,255,1) 100%);
+}
+
+h1{
+    color: aliceblue;
+    text-align: center;
+}
