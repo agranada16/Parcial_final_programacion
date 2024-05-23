@@ -8,10 +8,22 @@
   </head>
 
   <body>
-    <h1 class="title">My Eco Store</h1>
+    <h1 class="title">Mi inventario de productos</h1>
+
+    <p class="parrafo">AGREGAR UN NUEVO PRODUCTO AL INVENTARIO:</p> <br>
     
+      <div id="input-container">
+        <input type="text" id="name-input" placeholder="Ingrese Nombre">
+        <input type="text" id="categoria-input" placeholder="Ingrese Categoria">
+		<input type="text" id="descripcion-input" placeholder="Ingrese descripción">
+		<input type="number" id="precio-input" placeholder="Ingrese Precio">
+        <button id="add-btn" onclick="crearProducto()">Agregar Nuevo</button>
+      </div>
+	  <br>
+	  
+	  <br>
     <div id="main_list"></div>
     <script src="app.js"></script>
-    
+
   </body>
 </html>

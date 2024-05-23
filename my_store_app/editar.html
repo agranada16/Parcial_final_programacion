@@ -1,0 +1,35 @@
+/////una aplicación típica de Node.js con Express y Sequelize:
+
+app.js: Este archivo es el punto de entrada de la aplicación donde se inicializa la aplicación 
+Express, se configuran los middleware, se definen las rutas y se inicia el servidor. Puede contener configuraciones 
+globales, como la conexión a la base de datos y la configuración del servidor HTTP. 
+
+controller.js: se definen los controladores, que son funciones encargadas de manejar las 
+solicitudes HTTP y de interactuar con la base de datos según sea necesario. Cada controlador corresponde a 
+una ruta o conjunto de rutas en la aplicación.
+
+route.js: Este archivo define las rutas de la aplicación, que son las URL a las que los clientes 
+pueden enviar solicitudes HTTP. Cada ruta está asociada a un controlador específico que se encarga 
+de manejar las solicitudes dirigidas a esa ruta. Por lo tanto, este archivo establece la relación entre las URL 
+de la aplicación y las funciones que deben ejecutarse cuando se accede a esas URL. El enrutador puede importar los 
+controladores necesarios y asignar cada controlador a una ruta específica utilizando métodos como router.get(), 
+router.post(), router.delete(), etc.
+
+En cuanto a la comunicación entre estos archivos:
+
+app.js importa el enrutador desde route.js y lo utiliza para definir las rutas de la aplicación.
+route.js importa los controladores desde controller.js y los utiliza para manejar las solicitudes HTTP 
+que llegan a las diferentes rutas.Los controladores, dentro de controller.js, pueden interactuar directamente con los 
+modelos definidos en otro archivo (como product.model.js) para realizar operaciones en la base de datos, como consultar,
+crear, actualizar o eliminar registros.
+Los modelos representan las entidades de la base de datos y su estructura. Estos modelos se definen utilizando una 
+biblioteca ORM (como Sequelize) y se importan en los controladores para realizar operaciones en la base de datos.
+ Los modelos también pueden importarse en otros archivos, como los controladores, según sea necesario.
+En resumen, app.js inicializa la aplicación y establece las rutas, route.js define las rutas y asigna controladores
+ a ellas, controller.js contiene las funciones que manejan las solicitudes HTTP y product.model.js define la estructura
+  y las operaciones de la base de datos relacionadas con los productos. Estos archivos trabajan juntos para construir 
+  una aplicación web completa con Node.js, Express y Sequelize.*/ 
+
+
+
+

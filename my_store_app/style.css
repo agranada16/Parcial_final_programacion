@@ -5,14 +5,15 @@
 }
 
 body{
-    background-color: rgb(86, 11, 97);
-    color: white;
+    background-color: rgb(253, 251, 251);
+    color: rgb(77, 71, 71);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .title{
     text-align: center;
     margin: 30px;
+    color: rgb(25, 150, 182);
 }
 
 #main_list{
@@ -24,15 +25,62 @@ body{
 
 .box{
     padding: 5px;
-    border: 1px dashed black;
+    border: 1px solid rgb(197, 29, 29);
     width: 300px;
 }
 
 .box p span{
-    color: rgb(229, 21, 142);
+    color: rgb(25, 150, 182);
     text-transform: capitalize;
 }
 
 .box p {
     font-weight: 200;
 }
+
+
+input[type=text], select {
+    width: 20%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  input[type=number], select {
+    width: 20%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  
+  div {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+
+  button {
+    background-color: rgb(25, 150, 182);
+    color: white;
+    padding: 7px 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+  }
+
+  .parrafo{
+    color: rgb(25, 150, 182);
+  }
+
+  
